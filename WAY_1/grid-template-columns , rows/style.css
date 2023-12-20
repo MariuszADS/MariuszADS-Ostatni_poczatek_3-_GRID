@@ -1,0 +1,29 @@
+.grid-container {
+	width: 1000px;
+	margin: 10px;
+}
+
+.grid-container {
+	display: grid;
+	/* display: flex; */
+    grid-template-columns: 15% 15% 15%;
+    grid-template-rows: 100px 500px 300px;
+
+    
+    gap:20px 100px;
+    /* column-gap: 100px; */
+}
+
+.grid-item {
+	display: flex;
+	border: 2px black solid;
+	align-items: center;
+	justify-content: center;
+	font-size: 36px;
+}
+.grid-item:nth-child(even) { 
+	background-color: #5dc473;
+}
+.grid-item:nth-child(odd) {
+	background-color: #5955db;
+}
